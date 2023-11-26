@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Autonomous Delivery Robot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Issac Mejia</strong> Engineering Portfolio</a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Autonomous Delivery Robot</h1>
+									</header>
+
+									<span class="image main"><img src="images/ADRS.jpg" alt="" /></span>
+
+									<p>The Autonomous Delivery Robot project aimed to revolutionize campus logistics by creating a robot capable of efficiently daelivering supplies and food to students and faculty at the Univeristy of California, Riverside. The comprehensive project spanned various phases, from problem definition to design conceptualization, selection, and validation. The robot's design emphasized autonomous navigation, obstacle avoidance, and manual control features. It included a compact body with an insulated compartment capable of carryinga  payload of atleast 20 pounds, ensuring the secure delivery of diverse items while navigating the campus terrain autonomously.</p>
+									<p>The robot employed skid steering, ultrasonic sensors, and GPS for navigation. Through a series of rigorous selection phases we determined optimal solutions for components like lids, steering mechanisms, navigation systems and power sources. Through protyping and simulations, we demonstrated basic functionalities such as object detection and avoidance, sensor based navigation, and showcasing a promising autonomous system.</p>
+									<p>The project identified areas for future enhancements and applications, including the use of more durable and lightweight materials, integrating more advanced sensors like LiDAR and powerful processers such as Raspberry Pi for improved mapping and navigation, and further developing the software and mechatronics to achieve complete autonomy, ensuring efficient and reliable deliveries across the UCR campus.</p>
+
+									<hr class="major" />
+
+									<h2>Design</h2>
+									<p>The body and construction of the autonomous delivery robot are designed for functionality, durability, and safety while considering the needs of navigation and payload accommodation. The robot's body is compact, built to house the essential components and cargo, ensuring efficient movement while maximizing the available space. Its power source relies on electricity, employing 4 DC motors for precise skid steering maneuvers across the campus landscape. Although our prototype was crafted from wood, the ultimate design transitioned to a robust carbon fiber body complemented by a fiberglass lid, enhancing resilience and protection for transported items.</p>
+									<p>Our robot efficiently employed an Arduino to gather data from the GPS sensor, process the information for optimal path determination, and orchestrate precise control over the four motors to execute the desired motion. Furthermore, the Arduino played a pivotal role in managing the robot's object detection system, promptly identifying obstacles and directing avoidance protocols for seamless navigation.</p>
+									<span class="image main">
+										<img src="images/ADRBD.jpg" alt="" />
+									</span>
+									<hr class="major" />
+
+									<h2>Navigation</h2>
+									<p>The navigation system of the autonomous delivery robot involves a multi-layered approach for precise and efficient movement across the campus environment. It utilizes a GPS module to establish the robot's global position, enabling it to create a waypoint navigation system towards the intended destination. This GPS-driven system acts as the primary guide, providing the robot with a foundational understanding of its current location and the target area. Moreover, the robot incorporates an intelligent routing algorithm, specifically the Breadth First Search Algorithm, to calculate the optimal path from its present position to the desired location. This algorithm facilitates the determination fo the most direct and time-efficient route available within the campus terrain.</p>
+									<p>In addition to GPS-driven navigation, the robot integrates 4 ultrasonic sensors strategically positioned to continuously scan and detect obstacles along its path. These sensors serve as a crucial role in identifying an obstructions or potential hazards, enabling the robot to implement real-time object avoidance protocols. Furthermore, these sensors allow for dynamic adjustments to the route, ensuring adaptability when faced with unexpected obstacles, such as ongoing construction, to maintain an uninterrupted and safe navigation path.</p>
+									<span class="image main">
+										<img src="images/ADRN.jpg" alt="" />
+									</span>
+									<hr class="major" />
+
+									<h2>Modeling and Analysis</h2>
+									<p>SolidWorks was instrumental in modeling the stress and strain on the suspension system brackets. Instead of running simulations on the entire model, we focused on one bracket, assuming an equal distribution of weight, resulting in 8 pounds of force on an individual bracket due to a total weight of32 pound-force shared among all four brackets. Additionally, MATLAB was employed to analyze the power requirements for the motors.</p>
+									<p>These simulations generated von Mises and URES displacement plots, showcasing the maximum and minimum stresses and displacements endured by the suspension bracket. Moreover, MATLAB facilitated the analysis of the torque necessities for the motors. During the problem definition phase, we established a requirement for the robot to support a 20 pound payload. Our MATLAB calculations highlighted the need for a torque of 3.5 ft-lb after conducting a free-body diagram analysis of one wheel to determine the requesite torque and extrapolating the required torque for the motors using MATLAB.</p>
+									<span class="image main">
+										<img src="images/ADRM.jpg" alt="" />
+									</span>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search 
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>-->
+
+							<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Homepage</a></li>
+									<li><a href="ADR.html">Autonomous Deliver Robot</a></li>
+									<li><a href="Projects.html">Projects</a></li>
+									<li><a href="WE.html">Work Experience</a></li>
+										<!--<li>
+											<span class="opener">Work Experience</span>
+											<ul>
+												<li><a href="WE.html">Engineering Intern</a></li>
+												<li><a href="WE.html">Residential Advisor</a></li>
+												<li><a href="WE.html">Group Fitness Instructor</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+
+											</ul> 
+										</li> -->
+									<!--
+									<li><a href="#">Etiam Dolore</a></li>
+									<li><a href="#">Adipiscing</a></li>
+									<li>
+										<span class="opener">Another Submenu</span>
+										<ul>
+											<li><a href="#">Lorem Dolor</a></li>
+											<li><a href="#">Ipsum Adipiscing</a></li>
+											<li><a href="#">Tempus Magna</a></li>
+											<li><a href="#">Feugiat Veroeros</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Maximus Erat</a></li>
+									<li><a href="#">Sapien Mauris</a></li>
+									<li><a href="#">Amet Lacinia</a></li> 
+								-->
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Work Experience</h2>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="WE.html" class="image"><img src="images/EIHP.jpg" alt="" /></a>
+										<p>I worked as an engineering intern for the Eastern Municipal Water District.</p>
+									</article>
+									<article>
+										<a href="WE.html" class="image"><img src="images/RALGPBJ.jpg" alt="" /></a>
+										<p>As a Resident Advisor, I assumed a multifaceted role dedicated to fostering a supportive and inclusive environment.</p>
+									</article>
+									<article>
+										<a href="WE.html" class="image"><img src="images/GFI.jpg" alt="" /></a>
+										<p>As a Group Fitness Instructor, I lead participants thorugh a set of work outs.</p>
+									</article>
+								</div>
+								<!--
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+								-->
+							</section>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>I would love to connect with you. Feel free to reach out for any inquiries. </p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#">issacmejia2001@gmail.com</a></li>
+									<li class="icon solid fa-phone">(951) 437-9568</li>
+									<li class="icon solid fa-home">www.linkedin.com/in/issac-mejia</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Issac Mejia. All rights reserved.</p>
+								<p>Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

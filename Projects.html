@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Issac Mejia</strong> Engineering Portfolio</a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>My Projects</h1>
+									</header>
+
+									<span class="image main"><img src="images/ADRP.jpg" alt="" /></span>
+
+									<p>Through my project experiences, I've developed a versatile skill set that spans various technical and soft skills. Specifically, I've gained expertise in robotics, sensor integration, microcontroller programming (Arduino, Raspberry Pi), CAD modeling (SolidWorks), and using simulation tools like MATLAB. These skills have been instrumental in designing, testing, and implementing electronic components and autonomous systems.</p>
+									<p>My involvement in projects has significantly enhanced my problem-solving abilities. I've become adept at troubleshooting technical issues and devising innovative solutions to overcome challenges. Moreover, I've cultivated strong project management skills, effectively coordinating tasks, managing resources, and navigating project constraints such as time and budget limitations.</p>
+									<p>Collaborating within project teams has refined my interpersonal skills, communication, and collaborative prowess. Additionally, working with simulations and data analysis tools has sharpened my analytical thinking and ability to derive insights from technical data. These experiences have also increased my adaptability to new technologies, methodologies, and diverse problem domains, fostering a well-rounded skill set applicable in various contexts.</p>
+
+									<hr class="major" />
+
+									<h2>Dual-Link Arm Mechanism</h2>
+									<p>For this project, I employed MATLAB to develop fundamental functions aimed at acquiring the free configuration space of a two-link robot. This function required input parameters detailing the arm's physical attributes, the obstacle's location, and the desired sample quantity. It proceeded to illustrate the arm at various positions, employing distinct sampling methods like random, central, or Halton's method to ascertain potential collisions with the obstacle. Subsequently, it generated a visual representation of the free configuration space, delineating collision occurrences within that configuration. Additionally, leveraging this configuration space, a breadth-first search algorithm was utilized to establish an optimal path between two specific arm configurations.</p>
+									<p>This project has significantly strengthened my proficiency in MATLAB, enhancing my logical thinking and problem-solving abilities. It provided a hands-on experience in applying foundational algorithms such as the Breadth First Search Algorithm to real-world scenarios, enriching my practical understanding of algorithmic principles.</p>
+									<span class="image main">
+										<img src="images/DLAFCS.jpg" alt="" />
+									</span>
+									<hr class="major" />
+
+									<h2>Mechanical Arm</h2>
+									<p>This project involves the automation of a Lego mechanical arm using various components such as a stepper motors, a DC motoro, an ultrasonic sensor, and button controls. The mechanical arm resembles a two-link robot, where gears regulate its motion. The first gear controls forward-backward movemet, the second manages up-down motion, and the arm terminates in a claw controlled by a knob wheel. Stepper motors were intended to control gear angles, while buttons facilitated user interaction. The Ultrasonic sensor worked in conjunction with the DC motor to command the claw's grip when near an object.</p>
+									<p>For this project, I created 3D printed custom motor stands and accessories compatible with Lego components. I then worked on combining this project with the previous project regarding the implementation of the free configuration space to an Arduino controlled dual-link arm.</p>
+									<span class="image main">
+										<img src="images/MA.jpg" alt="" />
+									</span>
+									<hr class="major" />
+
+									<h2>Straw Truss Bridge</h2>
+									<p>For this project, our objective was to design and build a truss bridge meeting specific constraints: using a maximum of 25 straws, spanning 12 inches in length and 2 inches in width, requiring self-standing capabilities without attachment to abutments. To approach this challenge, our initial strategy involved creating diverse truss structures using SolidWorks. We then conducted various simulations to ascertain crucial data points: the maximum load capacity before structural failure, the location of failure within the bridge, and the cause behind the failure.</p>
+									<p>After identifying the optimal design among our iterations, we acquired our own set of test straws to construct the most promising bridge for an in-house competition with our teammates. The objective was to select the most robust design that would advance to compete against other bridges created by classmates. Although my bridge demonstrated the ability to bear the greatest weight, my teammate's bridge exhibited superior structural efficiency. Consequently, we collaborated to refine our approach, aiming to develop a final bridge that was both lightweight and exceptionally strong.</p>
+									<span class="image main">
+										<img src="images/TBF.jpg" alt="" />
+									</span>
+
+									<h2>Finite Element Analysis</h2>
+									<p>The navigation system of the autonomous delivery robot involves a multi-layered approach for precise and efficient movement across the campus environment. It utilizes a GPS module to establish the robot's global position, enabling it to create a waypoint navigation system towards the intended destination. This GPS-driven system acts as the primary guide, providing the robot with a foundational understanding of its current location and the target area. Moreover, the robot incorporates an intelligent routing algorithm, specifically the Breadth First Search Algorithm, to calculate the optimal path from its present position to the desired location. This algorithm facilitates the determination fo the most direct and time-efficient route available within the campus terrain.</p>
+									<p>In addition to GPS-driven navigation, teh robot integrates 4 ultrasonic sensors strategically positioned to continuously scan and detect obstacles along its path. These sensors serve as a crucial role in identifying an obstructions or potential hazards, enabling the robot to implement real-time object avoidance protocols. Furthermore, these sensors allow for dynamic adjustments to the route, ensuring adaptability when faced with unexpected obstacles, such as ongoing construction, to maintain an uninterrupted and safe navigation path.</p>
+									<span class="image main">
+										<img src="images/FEM.jpg" alt="" />
+									</span>
+									<hr class="major" />
+
+									<h2>Kinematic and Dynamic Analysis of Mechanisms</h2>
+									<p>In this project, I formulated vector loop equations, position equations, velocity equations, and acceleration equations for the strider and Janson leg linkages. Using MATLAB and these equations, I calculated the positions of all links relative to the input link and simulated the mechanism's motion. This project served as a cornerstone for simulating a plate cam with a translating flat follower. Similar to the leg linkages, we computed position, velocity, and acceleration at specific rotation angles for the cam. We also determined the cam's profile and face width based on parameters such as the radius of curvature and the cam's behavior. Leveraging this data, we simulated the cam's motion in MATLAB.</p>
+									<span class="image main">
+										<img src="images/KDMP.jpg" alt="" />
+									</span>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+							-->
+							<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Homepage</a></li>
+									<li><a href="ADR.html">Autonomous Deliver Robot</a></li>
+									<li><a href="Projects.html">Projects</a></li>
+									<li><a href="WE.html">Work Experience</a></li>
+										<!--<li>
+											<span class="opener">Work Experience</span>
+											<ul>
+												<li><a href="WE.html">Engineering Intern</a></li>
+												<li><a href="WE.html">Residential Advisor</a></li>
+												<li><a href="WE.html">Group Fitness Instructor</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+
+											</ul> 
+										</li> -->
+									<!--
+									<li><a href="#">Etiam Dolore</a></li>
+									<li><a href="#">Adipiscing</a></li>
+									<li>
+										<span class="opener">Another Submenu</span>
+										<ul>
+											<li><a href="#">Lorem Dolor</a></li>
+											<li><a href="#">Ipsum Adipiscing</a></li>
+											<li><a href="#">Tempus Magna</a></li>
+											<li><a href="#">Feugiat Veroeros</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Maximus Erat</a></li>
+									<li><a href="#">Sapien Mauris</a></li>
+									<li><a href="#">Amet Lacinia</a></li> 
+								-->
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Work Experience</h2>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="WE.html" class="image"><img src="images/EIHP.jpg" alt="" /></a>
+										<p>I worked as an engineering intern for the Eastern Municipal Water District.</p>
+									</article>
+									<article>
+										<a href="WE.html" class="image"><img src="images/RALGPBJ.jpg" alt="" /></a>
+										<p>As a Resident Advisor, I assumed a multifaceted role dedicated to fostering a supportive and inclusive environment.</p>
+									</article>
+									<article>
+										<a href="WE.html" class="image"><img src="images/GFI.jpg" alt="" /></a>
+										<p>As a Group Fitness Instructor, I lead participants thorugh a set of work outs.</p>
+									</article>
+								</div>
+								<!--
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+								-->
+							</section>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>I would love to connect with you. Feel free to reach out for any inquiries. </p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#">issacmejia2001@gmail.com</a></li>
+									<li class="icon solid fa-phone">(951) 437-9568</li>
+									<li class="icon solid fa-home">www.linkedin.com/in/issac-mejia</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Issac Mejia. All rights reserved.</p>
+								<p>Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
